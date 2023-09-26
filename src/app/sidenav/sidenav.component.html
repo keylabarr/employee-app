@@ -1,0 +1,41 @@
+<div class="container-fluid sidebar-wrapper">
+  <div class="row flex-nowrap h-100">
+    <div class="col-auto col-md-3 col-xl-2 px-0 sidebar-container">
+      <div class="d-flex flex-column align-items-center pt-2 text-white min-vh-100">
+        <div class="w-100 d-flex justify-content-center">
+          <a href="/" class="d-flex align-items-center justify-content-center flex-column pb-3 mb-md-0 text-white text-decoration-none">
+
+            <img class="home-icon" src="../../assets/employee.png" alt="Icono tienda">
+
+            <span class="home-title d-none d-sm-inline text-center">Employee App</span>
+          </a>
+        </div>
+        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 gap-2 align-items-center w-100 mt-4" id="menu">
+
+          <li class="nav-item">
+            <a routerLink="employees" routerLinkActive="active-nav-item" class="nav-link px-0">
+              <mat-icon class="align-middle">manage_accounts</mat-icon> <span
+                class="ms-1 d-none d-sm-inline">Empleados</span>
+            </a>
+          </li>
+
+        </ul>
+        <hr>
+        <div class="dropdown pb-4">
+
+          <div class="d-flex justify-content-between">
+            <button mat-icon-button><mat-icon>logout</mat-icon></button>
+            <button mat-icon-button><mat-icon>settings</mat-icon></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Content -->
+    <div class="col main-container py-3 overflow-y-scroll">
+      <div class="h-100">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>
+

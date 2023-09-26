@@ -1,1 +1,142 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+:root {
+  --primary-color: #B38DB3;
+  --secondary-color: #705970;
+  --secondary-color-hover: #e6372d;
+  --terciary-color: #7D97F4;
+  --util-color: #E1E9FE;
+  --white-color: #FFFFFF;
+  --black-color: #000000;
+  --dark-color: #333333;
+
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+/* ======================================== Buttons ======================================== */
+
+button {
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+}
+
+.button {
+  border-radius: 10px !important;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.button-primary {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+}
+
+.button-secondary {
+  background-color: var(--secondary-color);
+  color: white;
+  font-weight: bold;
+}
+/* ======================================== Angular Material Overrides ======================================== */
+
+.mat-form-field mat-label {
+  background-color: transparent;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.mat-form-field .mat-form-field-outline-start {
+  background-color: transparent !important;
+}
+
+.mat-form-field .mat-form-field-outline-gap {
+  background-color: transparent !important;
+}
+
+.mat-form-field .mat-form-field-outline-end {
+  background-color: transparent !important;
+}
+
+.mat-form-field-ripple {
+  background-color: var(--primary-color) !important;
+}
+
+.mat-error {
+  color: #f44336
+}
+.mat-form-field-invalid .mat-form-field-ripple {
+  background-color: #f44336 !important;
+}
+.mat-form-field-invalid  .mat-form-field-label  {
+  /*change color of label*/
+  color:  #f44336 !important;
+}
+
+.mat-form-field-label {
+  /*change color of label*/
+  color: var(--dark-color) !important;
+  font-weight: bold !important;
+}
+
+.mat-focused .mat-form-field-label {
+  /*change color of label*/
+  color: var(--primary-color) !important;
+}
+
+.mat-form-field-underline {
+  background-color: var(--primary-color) !important;
+}
+
+.mat-form-field-appearance-outline.mat-focused
+.mat-form-field-outline-thick {
+  color: var(--primary-color) !important;
+}
+
+.mat-horizontal-content-container,
+.mat-horizontal-stepper-header-container {
+  background-color: var(--util-color);
+}
+
+.mat-form-field-suffix,
+.mat-form-field-infix {
+  top: 0em !important;
+}
+
+.mat-slider-thumb {
+	background-color: var(--primary-color) !important;
+}
+
+.mat-slider-thumb-label {
+	background-color: var(--primary-color) !important;
+}
+
+.mat-slider-track-fill {
+	background-color: var(--primary-color) !important;
+}
+
